@@ -3,7 +3,7 @@ import Menu1 from "./Menu1";
 import Menu2 from "./Menu2";
 
 
-class Parent extends Component {
+class Menuwarung extends Component {
     state = {
         menu2: false,
         menu1: false
@@ -32,11 +32,11 @@ class Parent extends Component {
                 <h1>WARUNG ASOOYY</h1>
                 <div style={{ display: "flex" }}>
                     <div style={{ width: "50%" }}>
-                        <button onClick={this.ubahKomponenMuncul1}>{this.state.firstChild ? 'Tutup' : 'Tampilkan'}</button>
+                        <button onClick={this.ubahKomponenMuncul1}>{this.state.menu2 ? 'Tutup' : 'Tampilkan'} Menu</button>
                         {this.state.menu2 && <Menu2 />}
                     </div>
                     <div style={{ width: "50%" }}>
-                        <button onClick={this.ubahKomponenMuncul2}>{this.state.secondChild ? 'Tutup' : 'Tampilkan'} Menu</button>
+                        <button onClick={this.ubahKomponenMuncul2}>{this.state.menu1 ? 'Tutup' : 'Tampilkan'} Menu</button>
                         {this.state.menu1 && <Menu1 />}
                     </div>
                 </div>
@@ -45,4 +45,4 @@ class Parent extends Component {
     }
 }
 
-export default Parent;
+export default Menuwarung;

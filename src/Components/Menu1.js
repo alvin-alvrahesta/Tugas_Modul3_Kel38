@@ -95,6 +95,13 @@ class Menu1 extends React.Component {
     }, this.handleCalculation);
   }
 
+    componentDidMount() {
+    alert(`Silahkan Memilih Menu :)`)
+    }
+    componentWillUnmount() {
+    alert('Terima Kasih Silahkan Tunggu')
+    }
+
   render() {
     const {
       asupan,
@@ -149,51 +156,6 @@ class Menu1 extends React.Component {
                     }
                   </Fragment>
                 </select>
-                <h3>=</h3>
-                <h2>Total: {TotalMakanan}</h2>
-              </div>
-              <div className='minuman'>
-                <h2>Minuman</h2>
-                <select onChange={this.handleChangeMinuman} name='minuman1'>
-                  <option value='0'>Pilih Minuman</option>
-                  <Fragment>
-                    {
-                      minuman.map(minuman => {
-                        return (
-                          <option value={minuman[1]}>{minuman[0]}</option>
-                        )
-                      })
-                    }
-                  </Fragment>
-                </select>
-                <h3>+</h3>
-                <select onChange={this.handleChangeMinuman} name='minuman2'>
-                  <option value='0'>Pilih Minuman</option>
-                  <Fragment>
-                    {
-                      minuman.map(minuman => {
-                        return (
-                          <option value={minuman[1]}>{minuman[0]}</option>
-                        )
-                      })
-                    }
-                  </Fragment>
-                </select>
-                <h3>+</h3>
-                <select onChange={this.handleChangeMinuman} name='minuman3'>
-                  <option value='0'>Pilih Minuman</option>
-                  <Fragment>
-                    {
-                      minuman.map(minuman => {
-                        return (
-                          <option value={minuman[1]}>{minuman[0]}</option>
-                        )
-                      })
-                    }
-                  </Fragment>
-                </select>
-                <h3>=</h3>
-                <h2>Total: {TotalMinuman} </h2>
               </div>
               
               <h2 style={{ color: '#3faf6c', textAlign: 'center', flex: '1 0 100%', margin: '10px 0' }}>Total Harga: {TotalHarga} </h2>

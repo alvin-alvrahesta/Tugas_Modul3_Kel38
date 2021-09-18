@@ -1,11 +1,11 @@
 import React from 'react'; import './App.css';
-import Parent from "./Components/Parent";
+import Menuwarung from './Components/menuwarung';
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Parent />
+        <Menuwarung />
       </div>
     )
   }
