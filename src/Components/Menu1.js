@@ -6,7 +6,7 @@ class Menu1 extends React.Component {
   constructor(props) {
     super(props)
     this.handleChangeAsupan = this.handleChangeAsupan.bind(this)
-    
+
     this.state = {
       asupan: [
         ['Gado-gado', 18000],
@@ -86,7 +86,7 @@ class Menu1 extends React.Component {
     alert(`Silahkan Memilih Menu :)`)
     }
     componentWillUnmount() {
-    alert('Terima Kasih Silahkan Tunggu')
+    alert('Terima Kasih Sudah Memesan, Silahkan Tunggu')
     }
 
   render() {
