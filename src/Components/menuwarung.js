@@ -32,11 +32,11 @@ class Menuwarung extends Component {
                 <h1>WARUNG ASOOYY</h1>
                 <div style={{ display: "flex" }}>
                     <div style={{ width: "50%" }}>
-                        <button onClick={this.ubahKomponenMuncul1}>{this.state.menu2 ? 'Tutup' : 'Tampilkan'} Menu</button>
+                        <button onClick={this.ubahKomponenMuncul1}>{this.state.menu2 ? 'Tutup' : 'Tampilkan'} Menu Minuman</button>
                         {this.state.menu2 && <Menu2 />}
                     </div>
                     <div style={{ width: "50%" }}>
-                        <button onClick={this.ubahKomponenMuncul2}>{this.state.menu1 ? 'Tutup' : 'Tampilkan'} Menu</button>
+                        <button onClick={this.ubahKomponenMuncul2}>{this.state.menu1 ? 'Tutup' : 'Tampilkan'} Menu Makanan</button>
                         {this.state.menu1 && <Menu1 />}
                     </div>
                 </div>

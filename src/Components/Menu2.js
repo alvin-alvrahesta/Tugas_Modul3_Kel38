@@ -19,15 +19,15 @@ class Menu2 extends React.Component {
         minuman3: 0,
 
       },
-      TotalMakanan: 0,
-      TotalMinuman: 0,
+
+
       TotalHarga: 0
     }
   }
 
   handleTotal = () => {
     const {
-      TotalMakanan,
+ 
       TotalMinuman,
     } = this.state
     this.setState({
@@ -73,10 +73,9 @@ class Menu2 extends React.Component {
 
   render() {
     const {
-      asupan,
+
       minuman,
-      TotalMakanan,
-      TotalMinuman,
+
       TotalHarga
     } = this.state
 
@@ -88,7 +87,7 @@ class Menu2 extends React.Component {
               <div className='minuman'>
                 <h2>Minuman</h2>
                 <select onChange={this.handleChangeMinuman} name='minuman1'>
-                  <option value='0'>Pilih Minuman</option>
+                  <option value='0'>Pilih</option>
                   <Fragment>
                     {
                       minuman.map(minuman => {
@@ -101,7 +100,7 @@ class Menu2 extends React.Component {
                 </select>
                 <h3>+</h3>
                 <select onChange={this.handleChangeMinuman} name='minuman2'>
-                  <option value='0'>Pilih Minuman</option>
+                  <option value='0'>Pilih</option>
                   <Fragment>
                     {
                       minuman.map(minuman => {
@@ -114,7 +113,7 @@ class Menu2 extends React.Component {
                 </select>
                 <h3>+</h3>
                 <select onChange={this.handleChangeMinuman} name='minuman3'>
-                  <option value='0'>Pilih Minuman</option>
+                  <option value='0'>Pilih</option>
                   <Fragment>
                     {
                       minuman.map(minuman => {
