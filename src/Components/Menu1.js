@@ -6,16 +6,14 @@ class Menu1 extends React.Component {
   constructor(props) {
     super(props)
     this.handleChangeAsupan = this.handleChangeAsupan.bind(this)
-    this.handleChangeMinuman = this.handleChangeMinuman.bind(this)
+    
     this.state = {
       asupan: [
         ['Gado-gado', 18000],
-        ['Ketoprak', 12000],
-        ['Pempek', 16000],
-        ['Rawon', 15000],
-        ['Soto Ayam', 14000],
-        ['Soto Padang', 12000],
-        ['Tongseng', 13000],
+        ['Tahu Gimbal', 12000],
+        ['Nasi Goreng', 16000],
+        ['Mie Ayam', 15000],
+
       ],
 
       menu: {
@@ -145,7 +143,7 @@ class Menu1 extends React.Component {
                 </select>
               </div>
               
-              <h2 style={{ color: '#3faf6c', textAlign: 'center', flex: '1 0 100%', margin: '10px 0' }}>Total Harga: {TotalHarga} </h2>
+              <h2 style={{ color: '#ff0000', textAlign: 'center', flex: '1 0 100%', margin: '10px 0' }}>Total Harga: {TotalHarga} </h2>
             </div>
           </div>
         </div>

@@ -126,7 +126,7 @@ class Menu2 extends React.Component {
                 </select>
               </div>
               
-              <h2 style={{ color: '#3faf6c', textAlign: 'center', flex: '1 0 100%', margin: '10px 0' }}>Total Harga: {TotalHarga} </h2>
+              <h2 style={{ color: '#ff0000', textAlign: 'center', flex: '1 0 100%', margin: '10px 0' }}>Total Harga: {TotalHarga} </h2>
             </div>
           </div>
         </div>
